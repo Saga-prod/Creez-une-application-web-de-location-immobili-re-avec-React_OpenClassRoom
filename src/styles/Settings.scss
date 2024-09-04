@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$font1: "Inter Tight", sans-serif;
+$font2: "Montserrat", sans-serif;
+$font3: "Albert Sans", sans-serif;
+
+$color1: #ff6060;
+$black: black;
+$white: white;
+$colo4: rgb(246, 246, 246);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0 auto;
+  font-family: $font1;
+}
+
+li {
+  list-style: none;
+}

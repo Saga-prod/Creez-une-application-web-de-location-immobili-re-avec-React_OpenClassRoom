@@ -1,0 +1,15 @@
+@import '../Settings.scss';
+
+.gallery {
+    background: $colo4;
+    margin: 30px auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 57px;
+    padding: 53px;
+
+    .card {
+        cursor: pointer;
+    }
+}
