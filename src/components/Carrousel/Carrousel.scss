@@ -1,0 +1,73 @@
+@import '../../styles/Settings.scss';
+
+.carrousel {
+    position: relative;
+    img {
+        object-fit: cover;
+        margin: 10px 0 21px 0;
+    }
+    .slide {
+        border-radius: 20px;
+        box-shadow: 0px 0px 7px #666;
+        width: 100%;
+        height: 462px;
+    }
+
+    .slide-hidden {
+        display: none;
+    }
+    .container_next_prev_image {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .prev img,
+    .next img {
+        cursor: pointer;
+        height: 7.8rem;
+        color: $white;
+        @media screen and (max-width: 800px) {
+            height: 6.5rem;
+        }
+        @media screen and (max-width: 560px) {
+            height: 4.5rem;
+        }
+        @media screen and (max-width: 480px) {
+            height: 2.8rem;
+        }
+    }
+    .prev {
+        margin-left: 10px;
+        @media screen and (max-width: 560px) {
+            margin-left: 5px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-left: 0px;
+        }
+    }
+    .next {
+        margin-right: 10px;
+        @media screen and (max-width: 560px) {
+            margin-right: 5px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-right: 0px;
+        }
+    }
+
+    span {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
+  }
+}

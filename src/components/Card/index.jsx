@@ -2,16 +2,16 @@
 // import DefaultPicture from '../../assets/Falaises.png'
 import '../../styles/components/Card.scss'
 
-function Card({ title, cover, id }) {
+function Card({ data }) {
     return (
-        <div key={id} className="cardContainer">
+        <div key={data.id} className="cardContainer">
             <img
                 className="cardImage"
-                src={cover}
+                src={data.cover}
                 alt="Premiere vue de l'appartement"
             />
             <div className="title">
-                <h2>{title}</h2>
+                <h2>{data.title}</h2>
             </div>
         </div>
     )

@@ -19,11 +19,14 @@ root.render(
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Accomodation/:idNumber" element={<Accomodation />} />
+                <Route
+                    path="/Accomodation/:idNumber"
+                    element={<Accomodation />}
+                />
                 {/* <Route path="/survey/:questionNumber" element={<Survey />} /> */}
                 {/* <Route path="/survey/results" element={<Results />}/> */}
                 {/* <Route path="/freelances" element={<Freelances />}/> */}
-                <Route path="/about" element={<About />}/>
+                <Route path="/about" element={<About />} />
                 {/* <Route path="/survey" element={<Survey />}>
                     <Route path="client" element={<ClientForm />} />
                     <Route path="freelance" element={<FreelanceForm />}

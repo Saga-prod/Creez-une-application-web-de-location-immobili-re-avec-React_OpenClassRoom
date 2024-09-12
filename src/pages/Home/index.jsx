@@ -21,9 +21,7 @@ function Home() {
                         return (
                             <Link to={`/accomodation/${item.id}`} className="card" key={`${item.title}-${item.id}`}>
                                 <Card
-                                    cover={item.cover}
-                                    title={item.title}
-                                    id={item.id}
+                                    data={item}
                                 />
                             </Link>
                         )

@@ -1,0 +1,31 @@
+@import '../Settings.scss';
+
+h1 {
+    color: $color1;
+    font-family: $font2;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.leftSideContainer p {
+    font-family: $font2;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.buttonContainer {
+    padding: 20px 0;
+}
+
+.buttonContainer button {
+    font-family: $font2;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $color1;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    flex-direction: row;
+    margin-right: 10px;
+}

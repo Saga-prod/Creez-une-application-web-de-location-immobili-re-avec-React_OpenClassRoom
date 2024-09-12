@@ -9,26 +9,23 @@
     }
 }
 
-ul {
+.navLinkContainer {
+    list-style: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: $font2;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     @include center;
     justify-content: space-between;
     gap: 60px;
 
-    li {
-        list-style: none;
-        cursor: pointer;
-        font-size: 2rem;
-        font-family: $font2;
-        font-weight: 500;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-
-        a {
-            text-decoration: none;
-            color: black;
-            &.active {
-                text-decoration: underline;
-            }
+    a {
+        text-decoration: none;
+        color: black;
+        &.active {
+            text-decoration: underline;
         }
     }
 }
