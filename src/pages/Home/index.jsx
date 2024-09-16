@@ -3,7 +3,7 @@ import Card from '../../components/Card'
 import imageFalaises from '../../assets/Falaises.png'
 import data from '../../datas/jsondata.json'
 import { Link } from 'react-router-dom'
-import '../../styles/pages/Home.scss'
+import './Home.scss'
 
 function Home() {
     return (

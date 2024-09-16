@@ -1,4 +1,4 @@
-@import '../Settings.scss';
+@import '../../Settings.scss';
 
 h1 {
     color: $color1;
@@ -7,10 +7,34 @@ h1 {
     font-size: 36px;
 }
 
+.container {
+    @include center;
+    justify-content: space-between;
+}
+
 .leftSideContainer p {
     font-family: $font2;
     font-size: 18px;
     margin-top: 10px;
+}
+
+.rightSideContainer {
+    align-self: flex-start;
+
+    .hostContainer {
+    @include center;
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        font-family: $font2;
+        color: $color1;
+    }
+    img {
+        border-radius: 50%;
+        margin-left: 20px;
+        height: 80px;
+    }
+}
 }
 
 .buttonContainer {

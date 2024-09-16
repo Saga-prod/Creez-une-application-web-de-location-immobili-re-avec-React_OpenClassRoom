@@ -1,6 +1,4 @@
-// import PropTypes from 'prop-types'
-// import DefaultPicture from '../../assets/Falaises.png'
-import '../../styles/components/Card.scss'
+import './Card.scss'
 
 function Card({ data }) {
     return (

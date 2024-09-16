@@ -28,18 +28,24 @@ function Carrousel({ data }) {
                     />
                 )
             })}
-            <div className="container_next_prev_image">
-                <i className="prev" onClick={prevSlide}>
-                    <img src={ArrowBack} alt="arrow left" />
-                </i>
+            {data.length > 1 ? (
+                <>
+                    <div className="container_next_prev_image">
+                        <i className="prev" onClick={prevSlide}>
+                            <img src={ArrowBack} alt="arrow left" />
+                        </i>
 
-                <i className="next" onClick={nextSlide}>
-                    <img src={ArrowForward} alt="arrow right" />
-                </i>
-            </div>
-            <span>
-                {slide + 1}/{data.length}
-            </span>
+                        <i className="next" onClick={nextSlide}>
+                            <img src={ArrowForward} alt="arrow right" />
+                        </i>
+                    </div>
+                    <span>
+                        {slide + 1}/{data.length}
+                    </span>
+                </>
+            ) : (
+                <></>
+            )}
         </div>
     )
 }
