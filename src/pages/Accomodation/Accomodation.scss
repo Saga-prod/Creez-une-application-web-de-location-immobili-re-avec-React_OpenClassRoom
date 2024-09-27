@@ -10,6 +10,10 @@ h1 {
 .container {
     @include center;
     justify-content: space-between;
+    @media screen and (max-width: 888px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .leftSideContainer p {
@@ -20,21 +24,27 @@ h1 {
 
 .rightSideContainer {
     align-self: flex-start;
+    @media screen and (max-width: 870px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
 
     .hostContainer {
-    @include center;
-    p {
-        font-weight: 500;
-        font-size: 18px;
-        font-family: $font2;
-        color: $color1;
+        @include center;
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            font-family: $font2;
+            color: $color1;
+        }
+        img {
+            border-radius: 50%;
+            margin-left: 20px;
+            height: 80px;
+        }
     }
-    img {
-        border-radius: 50%;
-        margin-left: 20px;
-        height: 80px;
-    }
-}
 }
 
 .buttonContainer {
@@ -52,4 +62,13 @@ h1 {
     border: none;
     flex-direction: row;
     margin-right: 10px;
+}
+
+.container_description {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+    @media screen and (max-width: 870px) {
+        display: block;
+    }
 }

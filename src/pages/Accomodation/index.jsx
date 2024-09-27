@@ -1,11 +1,10 @@
 import { useParams } from 'react-router-dom'
 import datas from '../../datas/jsondata.json'
-// import Error from '../Error'
 import Carrousel from '../../components/Carrousel'
 import Rating from '../../components/Rating'
 import './Accomodation.scss'
 import Error from '../Error'
-// import Collapse from '../../components/Collapse'
+import Collapse from '../../components/Collapse'
 
 function Accomodation() {
     const { idNumber } = useParams()
@@ -30,7 +29,7 @@ function Accomodation() {
                     <div className="buttonContainer">
                         {accomodation.tags.map((item, index) => {
                             return (
-                                <button key={`${item}-${index}`}>{item}</button>
+                                <button key={`${item}-${index}`}>{item}</button> // Changer, ce c'est pas des button //
                             )
                         })}
                     </div>
@@ -45,7 +44,20 @@ function Accomodation() {
                     </div>
                     <Rating rating={accomodation.rating} />
                 </div>
-                {/* <Collapse title={'titre'} content={'content'}/> */}
+            </div>
+            <div className="container_description">
+                <Collapse
+                    className="title-logement"
+                    title="Description"
+                    msg={accomodation.description}
+                />
+                <Collapse
+                    className="title-logement"
+                    title="Équipement"
+                    msg={accomodation.equipments.map((equipment, index) => (
+                        <li key={index}>{equipment}</li>
+                    ))}
+                />
             </div>
         </section>
     )

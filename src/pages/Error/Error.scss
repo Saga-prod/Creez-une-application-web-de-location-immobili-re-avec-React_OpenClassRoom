@@ -1,5 +1,59 @@
-@import '../../Settings.scss';
+@import "../../Settings.scss";
 
-h1 {
-    font-size: 400px;
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  margin: 30px auto;
+  width: 70%;
+  @media screen and (max-width: 380px) {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+    color: $color1;
+    font-family: "Montserrat", sans-serif;
+    @media screen and (max-width: 464px) {
+      font-size: 8rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 7rem;
+    }
+  }
+
+  .center_paragraphe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    p {
+      color: $color1;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 0;
+      @media screen and (max-width: 464px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 436px) {
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 1.2rem;
+      }
+    }
+    p:first-child {
+      margin-right: 0.5rem;
+    }
+
+    @media screen and (max-width: 776px) {
+      flex-direction: column;
+    }
+  }
+  a {
+    color: $black;
+  }
 }

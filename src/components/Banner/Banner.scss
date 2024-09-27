@@ -9,6 +9,12 @@
         height: 245px;
         border-radius: 20px;
         object-fit: cover;
+        @media screen and (max-width: 768px) {
+            height: 180px;
+        }
+        @media screen and (max-width: 480px) {
+            height: 122px;
+        }
     }
     &.home-banner img {
         filter: brightness(40%) contrast(120%) saturate(100%);
@@ -23,5 +29,39 @@
         color: $white;
         padding: 15px;
         -webkit-text-stroke: 1px black;
+        @media screen and (max-width: 1324px) {
+            font-size: 3.8rem;
+        }
+        @media screen and (max-width: 1161px) {
+            font-size: 3.7rem;
+        }
+        @media screen and (max-width: 1048px) {
+            font-size: 3.3rem;
+            -webkit-text-stroke: initial;
+            font-family: $font1;
+            left: 10px;
+            font-weight: 600;
+            width: 450px;
+        }
+        @media screen and (max-width: 824px) {
+            font-size: 2.5rem;
+            width: 360px;
+        }
+        @media screen and (max-width: 701px) {
+            font-size: 2.1rem;
+            width: 300px;
+        }
+        @media screen and (max-width: 478px) {
+            font-size: 1.6rem;
+            width: 240px;
+        }
+        @media screen and (max-width: 400.17px) {
+            font-size: 1.5rem;
+            width: 230px;
+        }
+        @media screen and (max-width: 367.07px) {
+            font-size: 1.4rem;
+            width: 210px;
+        }
     }
 }

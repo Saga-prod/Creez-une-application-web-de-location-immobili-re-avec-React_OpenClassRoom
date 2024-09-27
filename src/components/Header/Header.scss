@@ -8,6 +8,22 @@
         width: 87%;
         margin: auto;
     }
+
+    img {
+    @media screen and (max-width: 545px) {
+      height: 3rem;
+      padding-right: 10px;
+    }
+    @media screen and (max-width: 410px) {
+      height: 2.8rem;
+    }
+    @media screen and (max-width: 375px) {
+      height: 2.6rem;
+    }
+    @media screen and (max-width: 343px) {
+      height: 2.3rem;
+    }
+  }
 }
 
 .navLinkContainer {
@@ -21,12 +37,27 @@
     @include center;
     justify-content: space-between;
     gap: 60px;
+    @media screen and (max-width: 660px) {
+        gap: 30px;
+    }
 
     a {
         text-decoration: none;
         color: black;
         &.active {
             text-decoration: underline;
+        }
+        @media screen and (max-width: 865px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 660px) {
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 545px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 0.9rem;
         }
     }
 }
