@@ -15,14 +15,4 @@ function Card({ data }) {
     )
 }
 
-// Card.propTypes = {
-//     title: PropTypes.string.isRequired,
-//     picture: PropTypes.string.isRequired,
-// }
-
-// Card.defaultProps = {
-//     title: '',
-//     picture: DefaultPicture,
-// }
-
 export default Card

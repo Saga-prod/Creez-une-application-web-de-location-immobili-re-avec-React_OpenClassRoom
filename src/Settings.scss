@@ -15,6 +15,7 @@ $colo4: rgb(246, 246, 246);
   box-sizing: border-box;
 }
 
+
 @mixin center {
   display: flex;
   justify-content: center;
@@ -28,4 +29,9 @@ li {
 section {
   width: 90%;
   margin: 0 auto;
+}
+
+Footer {
+  display: flex;
+  justify-content: flex-end;
 }

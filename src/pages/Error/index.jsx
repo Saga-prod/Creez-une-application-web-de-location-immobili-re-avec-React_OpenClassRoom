@@ -3,7 +3,7 @@ import './Error.scss'
 
 function Error() {
     return (
-        <div>
+        <>
             <section className="error">
                 <h2>404</h2>
                 <div className="center_paragraphe">
@@ -11,7 +11,7 @@ function Error() {
                 </div>
                 <Link to="/">Retourner sur la page d'acceuil</Link>
             </section>
-        </div>
+        </>
     )
 }
 
